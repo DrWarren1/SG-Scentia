@@ -124,7 +124,7 @@ nav.scrolled{
 
 .hero-logo-mark{
   width:min(640px,90vw);height:auto;max-height:64vh;
-  object-fit:contain;margin:0 auto 4px;
+  object-fit:contain;margin:0 auto 0;
   opacity:0;animation:fade-down .9s .1s ease forwards;
   display:block;
 }
@@ -142,7 +142,7 @@ nav.scrolled{
   font-family:var(--serif);
   font-size:clamp(2rem,3.5vw,4rem);
   font-weight:300;line-height:1.0;
-  color:var(--cream);margin-bottom:16px;
+  color:var(--cream);margin-top:-18px;margin-bottom:14px;
   letter-spacing:-.02em;
   opacity:0;animation:fade-up .8s .6s ease forwards;
 }
@@ -163,10 +163,9 @@ nav.scrolled{
 
 /* ─── Scroll indicator ─────────────────────────────────────── */
 .hero-scroll{
-  position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
   display:flex;flex-direction:column;align-items:center;gap:0;
+  margin-top:22px;
   opacity:0;animation:fade-up .8s 1.3s ease forwards;
-  z-index:1;
 }
 .scroll-line{
   width:1px;height:52px;
@@ -662,8 +661,8 @@ footer{background:var(--dark);padding:72px 56px 40px;border-top:1px solid rgba(2
       <a href="#machine" class="btn btn-gold">Découvrir</a>
       <a href="#investir" class="btn btn-outline">Investir</a>
     </div>
+    <div class="hero-scroll"><div class="scroll-line"></div></div>
   </div>
-  <div class="hero-scroll"><div class="scroll-line"></div></div>
 </section>
 
 <!-- ─── TAGLINE BAND ───────────────────────────────────────── -->
