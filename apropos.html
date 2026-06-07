@@ -188,13 +188,28 @@ nav{
 .team-card h3{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--cream);margin-bottom:4px}
 .team-role{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:16px;display:block}
 .team-desc{font-size:.86rem;line-height:1.75;color:var(--text-m);margin-bottom:20px}
-.team-skills{display:flex;flex-wrap:wrap;gap:6px}
+.team-skills{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .skill-tag{
   font-size:.62rem;letter-spacing:.07em;text-transform:uppercase;
   padding:4px 10px;border-radius:50px;
   background:rgba(201,168,76,.1);color:var(--gold-lt);
   border:1px solid rgba(201,168,76,.2);
 }
+
+.linkedin-link{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(10,102,194,.15);border:1px solid rgba(10,102,194,.35);
+  color:#5ba3d9;font-style:italic;font-weight:700;font-size:.78rem;
+  text-decoration:none;transition:background .2s,border-color .2s,transform .2s;
+  flex-shrink:0;margin-left:auto;
+}
+.linkedin-link:hover{
+  background:rgba(10,102,194,.28);border-color:rgba(10,102,194,.6);
+  transform:scale(1.1);
+}
+.team-card-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:4px}
+.team-card-header h3{margin-bottom:0}
 
 /* ─── CTA BOTTOM ──────────────────────────────────────────── */
 .cta-bottom{
@@ -329,7 +344,10 @@ footer p{font-size:.75rem;color:rgba(240,235,224,.2);margin-top:8px}
     <div class="team-grid">
       <div class="team-card" data-r>
         <div class="team-avatar">A</div>
-        <h3>Aymeric</h3>
+        <div class="team-card-header">
+          <h3>Aymeric</h3>
+          <a href="https://www.linkedin.com/in/aymeric-bardeur-4b3038221" target="_blank" class="linkedin-link" title="LinkedIn d'Aymeric">in</a>
+        </div>
         <span class="team-role">Chef de projet · Finance · Juridique</span>
         <p class="team-desc">Pilote la vision stratégique du projet, structure le modèle financier et assure la conformité juridique. Responsable des partenariats B2B et de la structure capitalistique.</p>
         <div class="team-skills">
@@ -340,7 +358,10 @@ footer p{font-size:.75rem;color:rgba(240,235,224,.2);margin-top:8px}
       </div>
       <div class="team-card" data-r>
         <div class="team-avatar">W</div>
-        <h3>Warren</h3>
+        <div class="team-card-header">
+          <h3>Warren</h3>
+          <a href="https://www.linkedin.com/in/warren-comuce" target="_blank" class="linkedin-link" title="LinkedIn de Warren">in</a>
+        </div>
         <span class="team-role">Marketing · Communication</span>
         <p class="team-desc">Orchestre la stratégie marketing et la communication digitale de SG SCENTIA. Responsable du positionnement de marque, des réseaux sociaux et des partenariats influenceurs.</p>
         <div class="team-skills">
@@ -351,7 +372,10 @@ footer p{font-size:.75rem;color:rgba(240,235,224,.2);margin-top:8px}
       </div>
       <div class="team-card" data-r>
         <div class="team-avatar">R</div>
-        <h3>Ramatoulaye</h3>
+        <div class="team-card-header">
+          <h3>Ramatoulaye</h3>
+          <a href="https://www.linkedin.com/in/ramatoulaye-sane-782292210" target="_blank" class="linkedin-link" title="LinkedIn de Ramatoulaye">in</a>
+        </div>
         <span class="team-role">Technique · Conception · Innovation</span>
         <p class="team-desc">Conçoit et développe le distributeur automatique — architecture technique, électronique embarquée, IoT et prototype. Garant de la conformité machine et sécurité.</p>
         <div class="team-skills">
