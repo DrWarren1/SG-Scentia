@@ -95,8 +95,9 @@ nav.scrolled{
 .hero-center{position:relative;z-index:1;max-width:740px}
 
 .hero-logo-mark{
-  width:100px;height:100px;margin:0 auto 48px;
+  width:220px;height:auto;margin:0 auto 52px;
   opacity:0;animation:fade-down .9s .1s ease forwards;
+  display:block;
 }
 .hero-eyebrow{
   font-size:.65rem;letter-spacing:.28em;text-transform:uppercase;
@@ -577,20 +578,15 @@ footer{background:var(--dark);padding:72px 56px 40px;border-top:1px solid rgba(2
 <!-- ─── HERO (épuré) ─────────────────────────────────────── -->
 <section class="hero">
   <div class="hero-center">
-    <!-- Logo hero — remplacer src par assets/logo.png pour le vrai logo -->
-    <svg class="hero-logo-mark" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <img src="logo1.png" alt="SG SCENTIA" class="hero-logo-mark"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <svg class="hero-logo-mark" style="display:none" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="60" cy="60" r="57" fill="#141210" stroke="#c9a84c" stroke-width="1"/>
-      <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(201,168,76,0.18)" stroke-width="0.5"/>
-      <rect x="49" y="15" width="22" height="7" rx="2.5" fill="#c9a84c"/>
-      <rect x="53" y="21" width="14" height="5" rx="1.5" fill="#c9a84c"/>
-      <line x1="30" y1="48" x2="90" y2="48" stroke="rgba(201,168,76,0.18)" stroke-width="0.5"/>
-      <text x="12" y="87" font-family="Georgia,serif" font-style="italic" font-size="50" fill="#c9a84c" opacity=".95">S</text>
-      <text x="57" y="93" font-family="Georgia,serif" font-style="italic" font-size="56" fill="#c9a84c" opacity=".95">G</text>
+      <text x="12" y="87" font-family="Georgia,serif" font-style="italic" font-size="50" fill="#c9a84c">S</text>
+      <text x="57" y="93" font-family="Georgia,serif" font-style="italic" font-size="56" fill="#c9a84c">G</text>
     </svg>
 
-    <p class="hero-eyebrow">Distributeur automatique de parfums · Île-de-France 2026</p>
     <h1>L'essence de vos<br><em>espaces</em></h1>
-    <p class="hero-sub">Discover · Experience · Indulge</p>
     <div class="btn-group">
       <a href="#concept" class="btn btn-gold">Découvrir</a>
       <a href="#investir" class="btn btn-outline">Investir</a>
@@ -897,7 +893,6 @@ footer{background:var(--dark);padding:72px 56px 40px;border-top:1px solid rgba(2
       <div class="invest-opt" data-r>
         <span class="invest-opt-label">Option A</span>
         <h3>Phase prototype</h3>
-        <span class="invest-opt-range">5 000 – 10 000€</span>
         <p>Financement de la phase prototype uniquement — validation du concept et premiers retours clients.</p>
         <ul class="invest-opt-list">
           <li>Prototype fonctionnel</li>
@@ -909,7 +904,6 @@ footer{background:var(--dark);padding:72px 56px 40px;border-top:1px solid rgba(2
       <div class="invest-opt featured" data-r>
         <span class="invest-opt-label">Option B</span>
         <h3>Prototype + 2 machines</h3>
-        <span class="invest-opt-range">15 000 – 20 000€</span>
         <p>Déploiement de 2 distributeurs sur emplacements stratégiques en Île-de-France — génération de CA réel.</p>
         <ul class="invest-opt-list">
           <li>2 distributeurs déployés</li>
@@ -922,7 +916,6 @@ footer{background:var(--dark);padding:72px 56px 40px;border-top:1px solid rgba(2
       <div class="invest-opt" data-r>
         <span class="invest-opt-label">Option C</span>
         <h3>Déploiement complet</h3>
-        <span class="invest-opt-range">30 000 – 40 000€</span>
         <p>Déploiement de 5 distributeurs — montée en puissance, notoriété et objectif d'équilibre opérationnel en Île-de-France.</p>
         <ul class="invest-opt-list">
           <li>5 distributeurs Île-de-France</li>
@@ -940,7 +933,7 @@ footer{background:var(--dark);padding:72px 56px 40px;border-top:1px solid rgba(2
       </div>
       <div class="invest-cta-actions">
         <a href="mailto:contact@sgscentia.fr" class="btn btn-gold">Nous contacter</a>
-        <a href="#" class="btn btn-outline">Dossier investisseur</a>
+        <a href="investisseur.html" class="btn btn-outline">Dossier investisseur</a>
       </div>
     </div>
   </div>
