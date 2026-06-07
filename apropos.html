@@ -173,11 +173,14 @@ nav{
 .team-section-header p{font-size:.9rem;line-height:1.8;color:var(--text-m)}
 .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .team-card{
+  display:block;text-decoration:none;color:inherit;
   background:rgba(255,255,255,.04);border-radius:var(--r);padding:40px;
   border:1px solid rgba(201,168,76,.15);
-  transition:transform .3s,box-shadow .3s,background .3s;
+  transition:transform .3s,box-shadow .3s,background .3s,border-color .3s;
+  cursor:pointer;
 }
-.team-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.3);background:rgba(201,168,76,.06)}
+.team-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.3);background:rgba(201,168,76,.08);border-color:rgba(201,168,76,.4)}
+.team-card:hover .team-avatar{border-color:var(--gold-lt);box-shadow:0 0 20px rgba(201,168,76,.3)}
 .team-avatar{
   width:72px;height:72px;border-radius:50%;
   background:var(--dark);border:2px solid var(--gold);
@@ -342,12 +345,9 @@ footer p{font-size:.75rem;color:rgba(240,235,224,.2);margin-top:8px}
       <p>Des compétences complémentaires — technique, marketing et gestion — organisées avec rigueur (RACI, SMART, PDCA).</p>
     </div>
     <div class="team-grid">
-      <div class="team-card" data-r>
+      <a href="https://www.linkedin.com/in/aymeric-bardeur-4b3038221" target="_blank" class="team-card" data-r>
         <div class="team-avatar">A</div>
-        <div class="team-card-header">
-          <h3>Aymeric</h3>
-          <a href="https://www.linkedin.com/in/aymeric-bardeur-4b3038221" target="_blank" class="linkedin-link" title="LinkedIn d'Aymeric">in</a>
-        </div>
+        <h3>Aymeric</h3>
         <span class="team-role">Chef de projet · Finance · Juridique</span>
         <p class="team-desc">Pilote la vision stratégique du projet, structure le modèle financier et assure la conformité juridique. Responsable des partenariats B2B et de la structure capitalistique.</p>
         <div class="team-skills">
@@ -355,13 +355,10 @@ footer p{font-size:.75rem;color:rgba(240,235,224,.2);margin-top:8px}
           <span class="skill-tag">Finance</span>
           <span class="skill-tag">Juridique</span>
         </div>
-      </div>
-      <div class="team-card" data-r>
+      </a>
+      <a href="https://www.linkedin.com/in/warren-comuce" target="_blank" class="team-card" data-r>
         <div class="team-avatar">W</div>
-        <div class="team-card-header">
-          <h3>Warren</h3>
-          <a href="https://www.linkedin.com/in/warren-comuce" target="_blank" class="linkedin-link" title="LinkedIn de Warren">in</a>
-        </div>
+        <h3>Warren</h3>
         <span class="team-role">Marketing · Communication</span>
         <p class="team-desc">Orchestre la stratégie marketing et la communication digitale de SG SCENTIA. Responsable du positionnement de marque, des réseaux sociaux et des partenariats influenceurs.</p>
         <div class="team-skills">
@@ -369,13 +366,10 @@ footer p{font-size:.75rem;color:rgba(240,235,224,.2);margin-top:8px}
           <span class="skill-tag">Communication</span>
           <span class="skill-tag">Brand</span>
         </div>
-      </div>
-      <div class="team-card" data-r>
+      </a>
+      <a href="https://www.linkedin.com/in/ramatoulaye-sane-782292210" target="_blank" class="team-card" data-r>
         <div class="team-avatar">R</div>
-        <div class="team-card-header">
-          <h3>Ramatoulaye</h3>
-          <a href="https://www.linkedin.com/in/ramatoulaye-sane-782292210" target="_blank" class="linkedin-link" title="LinkedIn de Ramatoulaye">in</a>
-        </div>
+        <h3>Ramatoulaye</h3>
         <span class="team-role">Technique · Conception · Innovation</span>
         <p class="team-desc">Conçoit et développe le distributeur automatique — architecture technique, électronique embarquée, IoT et prototype. Garant de la conformité machine et sécurité.</p>
         <div class="team-skills">
@@ -383,7 +377,7 @@ footer p{font-size:.75rem;color:rgba(240,235,224,.2);margin-top:8px}
           <span class="skill-tag">IoT</span>
           <span class="skill-tag">CAO</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
